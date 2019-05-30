@@ -7,10 +7,12 @@ gem 'bootsnap', require: false
 gem 'mysql2'
 
 group :development, :test do
-  gem 'listen'
-  gem 'spring'
-  gem 'spring-watcher-listen'
-  gem 'minitest-stub_any_instance'
+  gem 'rspec-rails'
+  gem 'guard'
+  gem 'guard-rspec', require: false
+  gem 'factory_bot'
+  gem 'factory_bot_rails'
+  gem 'simplecov', require: false
 end
 
 group :development do
@@ -23,4 +25,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'bullet'
+  gem 'listen'
+  gem 'spring'
+  gem 'spring-watcher-listen'
 end
