@@ -1,4 +1,4 @@
-FROM ruby:2.6-alpine
+FROM ruby:2.6.3-alpine
 
 ENV LANG C.UTF-8
 ENV RAILS_ROOT=/srv/app/current
@@ -29,5 +29,6 @@ RUN apk add --update --no-cache --virtual=.build-dependencies \
       mariadb-dev \
       tzdata \
       yaml && \
+    gem install bundler:2.0.1 && \
     bundle install -j4 && \
     apk del .build-dependencies
