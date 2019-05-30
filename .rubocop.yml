@@ -1,0 +1,19 @@
+require:
+  - rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 2.6
+  TargetRailsVersion: 6.0
+  Exclude:
+    - '.bundle/**/*'
+
+Rails:
+  Enabled: true
+
+# 日本語でのコメントを許可
+Style/AsciiComments:
+  Enabled: false
+
+# gemの順番は気にせず書きたいので許可
+Bundler/OrderedGems:
+  Enabled: false
