@@ -1,0 +1,2 @@
+#!/bin/sh
+docker push xmtst/mk-micro:latest
