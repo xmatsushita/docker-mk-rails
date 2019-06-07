@@ -5,6 +5,7 @@ gem 'rails', '~> 6.0.0.rc1'
 gem 'puma'
 gem 'bootsnap', require: false
 gem 'mysql2'
+gem 'bugsnag'
 
 group :development, :test do
   gem 'rspec-rails'
