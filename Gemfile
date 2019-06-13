@@ -20,6 +20,7 @@ end
 group :development do
   gem 'byebug', platforms: :mri
   gem 'rubocop'
+  gem 'rubocop-rails'
   gem 'rubocop-performance'
   gem 'brakeman'
   gem 'bundler-audit'
