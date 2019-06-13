@@ -1,6 +1,7 @@
 FROM ruby:2.6.3-alpine
 
 ENV LANG C.UTF-8
+ENV TZ=Asia/Tokyo
 ENV RAILS_ROOT=/srv/app/current
 
 RUN mkdir -p $RAILS_ROOT

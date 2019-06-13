@@ -5,6 +5,7 @@ gem 'rails', '~> 6.0.0.rc1'
 gem 'puma'
 gem 'bootsnap', require: false
 gem 'mysql2'
+gem 'whenever'
 gem 'bugsnag'
 
 group :development, :test do
@@ -19,6 +20,7 @@ end
 group :development do
   gem 'byebug', platforms: :mri
   gem 'rubocop'
+  gem 'rubocop-rails'
   gem 'rubocop-performance'
   gem 'brakeman'
   gem 'bundler-audit'
