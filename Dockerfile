@@ -21,7 +21,8 @@ RUN apk add --update --no-cache --virtual=.build-dependencies \
       ruby-dev \
       yaml-dev \
       zlib-dev \
-      mysql-dev && \
+      mysql-dev \
+      build-base && \
     apk add --update --no-cache \
       bash \
       openssh \
