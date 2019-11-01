@@ -1,4 +1,4 @@
-FROM ruby:2.6.3-alpine
+FROM ruby:2.6.5-alpine
 
 ENV LANG C.UTF-8
 ENV TZ=Asia/Tokyo
@@ -13,7 +13,6 @@ ADD ./Gemfile.lock $RAILS_ROOT/Gemfile.lock
 
 RUN apk update && apk upgrade
 RUN apk add --update --no-cache --virtual=.build-dependencies \
-      build-base \
       curl-dev \
       linux-headers \
       libxml2-dev \
